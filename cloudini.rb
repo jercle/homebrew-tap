@@ -10,7 +10,7 @@ class Cloudini < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/jercle/cloudini/releases/download/v0.1.8/cloudini_Darwin_x86_64.tar.gz"
-      sha256 "7297bddbff5a0c1a45ed1adc76e49d8ece477f25778906f787fb74963bef80d0"
+      sha256 "7b6dc9d0be867519b63bb73aa2f3280412640430305d7482dd8f176d34973d38"
 
       def install
         bin.install "cld"
@@ -18,7 +18,7 @@ class Cloudini < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/jercle/cloudini/releases/download/v0.1.8/cloudini_Darwin_arm64.tar.gz"
-      sha256 "0aa3a481edd748d762b8c7a79202cad1f60468fb707ee92c667058f599aa67f3"
+      sha256 "16a5121a5967b7f88c6a4437f6c366fd9bc86e08dada36c34fe3101863ec37e4"
 
       def install
         bin.install "cld"
@@ -29,7 +29,7 @@ class Cloudini < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/jercle/cloudini/releases/download/v0.1.8/cloudini_Linux_x86_64.tar.gz"
-      sha256 "caa21301e097caa6fdcb9d8208ab165d40a5dc0e1f8364537e21f4adc8fb9cee"
+      sha256 "57836c5b1e69c771248572a702fb07bac615a455b522c7e1663a9e5c328f2571"
 
       def install
         bin.install "cld"
@@ -37,7 +37,7 @@ class Cloudini < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/jercle/cloudini/releases/download/v0.1.8/cloudini_Linux_arm64.tar.gz"
-      sha256 "0c2e81e3d6d14b969c2b641fd5806c78edfc3e3f6b015310163a764deae21a57"
+      sha256 "a51a9d0b37ad56884fa11f0d48452647e7115af2b49903cf499d438525ef86fc"
 
       def install
         bin.install "cld"
