@@ -5,20 +5,20 @@
 class Cloudini < Formula
   desc "Cloud CLI providing functionality Azure CLI doesn't. Soon to add GCP and AWS features."
   homepage "https://github.com/jercle/cloudini"
-  version "0.1.8"
+  version "0.1.9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jercle/cloudini/releases/download/v0.1.8/cloudini_Darwin_x86_64.tar.gz"
-      sha256 "7b6dc9d0be867519b63bb73aa2f3280412640430305d7482dd8f176d34973d38"
+      url "https://github.com/jercle/cloudini/releases/download/v0.1.9/cloudini_Darwin_x86_64.tar.gz"
+      sha256 "9ed494341a9a5cfa74fc2905754b6b448fae1205689931b2ed10582fa5a956ab"
 
       def install
         bin.install "cld"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jercle/cloudini/releases/download/v0.1.8/cloudini_Darwin_arm64.tar.gz"
-      sha256 "16a5121a5967b7f88c6a4437f6c366fd9bc86e08dada36c34fe3101863ec37e4"
+      url "https://github.com/jercle/cloudini/releases/download/v0.1.9/cloudini_Darwin_arm64.tar.gz"
+      sha256 "2882fe47b2cef4b3a7b64e0c38e960c6ff00433ec63a9dcd0395aef644fcc994"
 
       def install
         bin.install "cld"
@@ -28,16 +28,16 @@ class Cloudini < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/jercle/cloudini/releases/download/v0.1.8/cloudini_Linux_x86_64.tar.gz"
-      sha256 "57836c5b1e69c771248572a702fb07bac615a455b522c7e1663a9e5c328f2571"
+      url "https://github.com/jercle/cloudini/releases/download/v0.1.9/cloudini_Linux_x86_64.tar.gz"
+      sha256 "7c05f68f295b608ff39db69687e5958dccc51f8d010c5caeb3df8db236b0b484"
 
       def install
         bin.install "cld"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jercle/cloudini/releases/download/v0.1.8/cloudini_Linux_arm64.tar.gz"
-      sha256 "a51a9d0b37ad56884fa11f0d48452647e7115af2b49903cf499d438525ef86fc"
+      url "https://github.com/jercle/cloudini/releases/download/v0.1.9/cloudini_Linux_arm64.tar.gz"
+      sha256 "551315ef18224c9828de1acba6ea545829a07b4412be4831a68ffd5725fb937f"
 
       def install
         bin.install "cld"
