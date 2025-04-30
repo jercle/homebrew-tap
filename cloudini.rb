@@ -5,20 +5,20 @@
 class Cloudini < Formula
   desc "Cloud CLI providing functionality Azure CLI doesn't. Soon to add GCP and AWS features."
   homepage "https://github.com/jercle/cloudini"
-  version "0.1.28"
+  version "0.1.29"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jercle/cloudini/releases/download/v0.1.28/cloudini_Darwin_x86_64.tar.gz"
-      sha256 "866c083dceac901920fdeda09da2aa0041007aa3e9d1e916328c74a1e24e8e50"
+      url "https://github.com/jercle/cloudini/releases/download/v0.1.29/cloudini_Darwin_x86_64.tar.gz"
+      sha256 "90839f1b539476a9f2a17d332437a2134d63789641b6f58c1254fb85654e27a7"
 
       def install
         bin.install "cld"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jercle/cloudini/releases/download/v0.1.28/cloudini_Darwin_arm64.tar.gz"
-      sha256 "71de80a9a9314e0173cb7f733ce162da2b3f112e382fc0d4fb9ad9cda3cb5fb9"
+      url "https://github.com/jercle/cloudini/releases/download/v0.1.29/cloudini_Darwin_arm64.tar.gz"
+      sha256 "4c74619957f805304d47eccb494ed1ff8a80e0f0fbbf409348a93d88673f8fef"
 
       def install
         bin.install "cld"
@@ -29,8 +29,8 @@ class Cloudini < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jercle/cloudini/releases/download/v0.1.28/cloudini_Linux_x86_64.tar.gz"
-        sha256 "5cc54f6a4c8d9e347cfd213d457d0c49ef51fb7be70ce9cab6566deb8797e52b"
+        url "https://github.com/jercle/cloudini/releases/download/v0.1.29/cloudini_Linux_x86_64.tar.gz"
+        sha256 "859e2738ada48342aa2da0bb72f2730e66a69d8b08c5ce7cedbe4e693fd292ce"
 
         def install
           bin.install "cld"
@@ -39,8 +39,8 @@ class Cloudini < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jercle/cloudini/releases/download/v0.1.28/cloudini_Linux_arm64.tar.gz"
-        sha256 "e06a1874c98a166e10b1ebbf247338711abb61dcb1578f6402acb58e74909d58"
+        url "https://github.com/jercle/cloudini/releases/download/v0.1.29/cloudini_Linux_arm64.tar.gz"
+        sha256 "499f08ee6bb8a2c1bc007def44c24bb64168bdd17456155436ed3f94578b5e48"
 
         def install
           bin.install "cld"
