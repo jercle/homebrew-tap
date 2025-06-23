@@ -5,20 +5,20 @@
 class Cloudini < Formula
   desc "Cloud CLI providing functionality Azure CLI doesn't. Soon to add GCP and AWS features."
   homepage "https://github.com/jercle/cloudini"
-  version "0.1.49"
+  version "0.1.50"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jercle/cloudini/releases/download/v0.1.49/cloudini_Darwin_x86_64.tar.gz"
-      sha256 "386ef0a6163b6c77f9399ec822f2b8b11eeed1afb1f1435ad405743cff8db384"
+      url "https://github.com/jercle/cloudini/releases/download/v0.1.50/cloudini_Darwin_x86_64.tar.gz"
+      sha256 "1be60d64a26921369a781acaf7487bb7aaf9c679317fba659c0285d5854d5cee"
 
       def install
         bin.install "cld"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jercle/cloudini/releases/download/v0.1.49/cloudini_Darwin_arm64.tar.gz"
-      sha256 "55ff68b04cde4b5951bc265d04093c700c54c32257459aa2a11f3b5d6e79e9c2"
+      url "https://github.com/jercle/cloudini/releases/download/v0.1.50/cloudini_Darwin_arm64.tar.gz"
+      sha256 "c5f1bd41c42127350cfe21618777db4ad3697bae6ab3736cb4b02daae4e4da5d"
 
       def install
         bin.install "cld"
@@ -28,15 +28,15 @@ class Cloudini < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/jercle/cloudini/releases/download/v0.1.49/cloudini_Linux_x86_64.tar.gz"
-      sha256 "202a2fce9fe9dab8c0fa16a8530c462257df10d95840a9b959c0ba73e5029955"
+      url "https://github.com/jercle/cloudini/releases/download/v0.1.50/cloudini_Linux_x86_64.tar.gz"
+      sha256 "143fe88c930597bb65cac7e0133babc7cf280b07fd0917be3002dc96cc3f4b5d"
       def install
         bin.install "cld"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/jercle/cloudini/releases/download/v0.1.49/cloudini_Linux_arm64.tar.gz"
-      sha256 "e61d30a55112fa249a1de92dccbaf06a8f73a6279235f43b672f4eebcbc3af14"
+      url "https://github.com/jercle/cloudini/releases/download/v0.1.50/cloudini_Linux_arm64.tar.gz"
+      sha256 "2bacf9625778d918febfb76ef3664119dfcc8f531d9aebe08513b50085438669"
       def install
         bin.install "cld"
       end
