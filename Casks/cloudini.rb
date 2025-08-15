@@ -2,7 +2,7 @@
 cask "cloudini" do
   desc "Cloud CLI providing functionality Azure CLI doesn't. Soon to add GCP and AWS features."
   homepage "https://github.com/jercle/cloudini"
-  version "0.3.17"
+  version "0.3.18"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "cloudini" do
 
   on_macos do
     on_intel do
-      url "https://github.com/jercle/cloudini/releases/download/0.3.17/cloudini_Darwin_x86_64.tar.gz"
-      sha256 "de5fbf6c834aafc35c7cbc9b08720ecf2d5b11e7fbebe517458cbd0baacc3fed"
+      url "https://github.com/jercle/cloudini/releases/download/0.3.18/cloudini_Darwin_x86_64.tar.gz"
+      sha256 "25846b969f9ac45ee3183dd07033285b918345f14ca35012cef8f25a0ad50290"
     end
     on_arm do
-      url "https://github.com/jercle/cloudini/releases/download/0.3.17/cloudini_Darwin_arm64.tar.gz"
-      sha256 "5868624e45cce0aa7fa9e4467ef2db2687defa492e147adf11d1bb80ed130522"
+      url "https://github.com/jercle/cloudini/releases/download/0.3.18/cloudini_Darwin_arm64.tar.gz"
+      sha256 "9d012296f5473745c6d72711273c8314a16be65cde19e54ebfbf3a829168c8fb"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/jercle/cloudini/releases/download/0.3.17/cloudini_Linux_x86_64.tar.gz"
-      sha256 "6c9168dceaa91185d104b5d4532fe6ccbd00834cccd565178284d66d63b88cab"
+      url "https://github.com/jercle/cloudini/releases/download/0.3.18/cloudini_Linux_x86_64.tar.gz"
+      sha256 "2dc11d2116b0b498f7d474702d6781e6e00bc43fc0bcb6b0b9379e504c4624d9"
     end
     on_arm do
-      url "https://github.com/jercle/cloudini/releases/download/0.3.17/cloudini_Linux_arm64.tar.gz"
-      sha256 "62a1d4e84439eedfc842f2a5c688cab70289a8e4a968b499cb128381225f51f9"
+      url "https://github.com/jercle/cloudini/releases/download/0.3.18/cloudini_Linux_arm64.tar.gz"
+      sha256 "7316fb6c0af2049e06f79d4b5b1ca221ff85668a0142efdc64787975ae7d8867"
     end
   end
 
