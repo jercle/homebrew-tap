@@ -4,21 +4,21 @@ cask "cloudini@0.4.13" do
 
   on_macos do
     on_arm do
-      sha256 "5c79b06e6b41c7bcfb69ce6b01b94cdc163cdb90631cd4b21b0ae5e533cf64a5"
+      sha256 "dd5250979d466c892c6e543d42e1b0e70eec9b52ee6975841c0de607d15ab9a4"
       url "https://github.com/jercle/cloudini/releases/download/v#{version}/cloudini_Darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "b0042968636050045ed6d48a100c341efa187653696486aefbc57b1db823d703"
+      sha256 "3e3b804cd381861c255289d56262d0b6fccc8d9a8c241c2f05b240a66d283a3a"
       url "https://github.com/jercle/cloudini/releases/download/v#{version}/cloudini_Darwin_x86_64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "8365829afe901104afcd2f65d62a05d9c32452ce2b269c19af6f31d9a42230d9"
+      sha256 "0306f57ee5f0c86515eebaa98c9bc99d72e0cb8af6084a5b781e43754853d2de"
       url "https://github.com/jercle/cloudini/releases/download/v#{version}/cloudini_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "99ea3412268fdc4c55f5df5fa0ddb5b24821f68b99859cc9966095e254d2e428"
+      sha256 "372aa013f9522feaaa213e12b682671b7d3b9b487a589744dc536c644a629f02"
       url "https://github.com/jercle/cloudini/releases/download/v#{version}/cloudini_Linux_x86_64.tar.gz"
     end
   end
